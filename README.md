@@ -2,7 +2,17 @@
 
 I'd also like to know that.
 
-This is a pretty dirty script to list which npm modules are installed in this directory, sorted by when they were released.
+npm handles transitive dependencies really well, but the lack of a first-class lockfile means it's difficult to tell when they update. `npm shrinkwrap` causes more issues than it prevents.
+
+This is a fairly dirty script to list which npm modules are installed, sorted by when they were released. It doesn't catch everything - notably, anything installed from github instead of the public registry may or may not end up in the report.
+
+# How about a one-liner?
+
+```
+npm i shackpank/what-the-fuck-changed && node ./node_modules/what-the-fuck-changed/index && npm prune
+```
+
+... will get you a report!
 
 Output is something like:
 
