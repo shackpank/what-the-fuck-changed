@@ -1,0 +1,15 @@
+{
+  "name": "what-the-fuck-changed",
+  "version": "1.0.0",
+  "description": "Something broke and it's probably not your fault. Who else is involved?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "moment": "^2.13.0"
+  }
+}
